@@ -19,7 +19,7 @@ class Doctor
   
   def appointments
     binding.pry 
-    Appointment.all.select {|a| a.doctor == self}
+    Appointment.all.select {|a| a.doctor.name == self}
   end
     
 end 
